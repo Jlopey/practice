@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Binary Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f8ff; /* Change this to your desired background color */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            padding: 20px;
+            margin: 20px;
+            width: 350px;
+        }
+        button {
+            padding: 20px 25px;
+            font-size: 16px;
+        }
+        #result, #binaryResult {
+            margin-top: 20px;
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1> Binary Converter</h1>
+    <p>Enter a number, letter, or word:</p>
+    <input type="text" id="inputText">
+    <button onclick="convertToBinary()">Convert to Binary</button>
+    <div id="result"></div>
+
+    <h2>Binary to Text Converter</h2>
+    <p>Enter binary (separated by spaces):</p>
+    <input type="text" id="inputBinary">
+    <button onclick="convertToText()">Convert to Text</button>
+    <div id="binaryResult"></div>
+
+    <script>
+        function convertToBinary() {
+            const input = document.getElementById('inputText').value;
+            let binaryResult = '';
+
+            for (let i = 0; i < input.length; i++) {
+                binaryResult += input[i].charCodeAt(0).toString(2) + ' ';
+            }
+
+            document.getElementById('result').textContent = binaryResult.trim();
+        }
+
+        function convertToText() {
+            const binaryInput = document.getElementById('inputBinary').value;
+            const binaryArray = binaryInput.split(' ');
+            let textResult = '';
+
+            for (let binary of binaryArray) {
+                textResult += String.fromCharCode(parseInt(binary, 2));
+            }
+
+            document.getElementById('binaryResult').textContent = textResult;
+        }
+    </script>
+</body>
+</html>

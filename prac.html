@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fundamentals of Computing Group Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            padding: 80px 120px;
+        }
+        .carousel-caption {
+            position: absolute;
+            left: 30%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 20px 20px 40px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            font-family: Arial Black;
+        }
+        .carousel-inner img {
+            filter: grayscale(10%);
+            width: 100%;
+            margin: auto;
+        }
+        #googleMap {
+            width: 100%;
+            height: 400px;
+            filter: grayscale(100%);
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: purple;
+            border: 0;
+            font-size: 12px !important;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+        .navbar li a:hover, .navbar .navbar-brand:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s;
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+        footer {
+            background-color: purple;
+            color: white;
+            padding: 42px;
+        }
+        footer a {
+            color: white;
+        }
+        footer a:hover {
+            color: green;
+            text-decoration: none;
+        }
+        .info-section {
+            background-color: white;
+            color: darkblue;
+            font-family: Arial;
+            padding: 20px;
+        }
+        .info-section img {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .info-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+   
+        
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="prac.html">FUNDAMENTALS OF COMPUTING</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="prac.html">HOME</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="project.html">PROJECT</a></li>
+                <li><a href="presentation.html">PRESENTATION</a></li>
+                <li><a href="database.html">DATABASE</a></li>
+                <li><a href="documentation.html">DOCUMENTATION</a></li>
+                <li><a href="dev_team.html">DEV TEAM</a></li>   
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="background.jpg" alt="Fundamentals of Computing" width="1200" height="700">
+            <div class="carousel-caption">
+                <h3 style="font-size: 60px;">Fundamentals Of Computing</h3>
+                <p style="font-size: 30px;">Welcome to our web page for the Fundamentals of Computing class (CMPS1134-2) at the University of Belize.</p>
+            </div>      
+        </div>
+        <div class="item">
+            <img src="background1.jpg" alt="Learning Environment" width="1200" height="700">
+            <div class="carousel-caption">
+                <h3 style="font-size: 50px;"></h3>
+                <p style="font-size: 25px;"></p>
+            </div>      
+        </div>
+        <div class="item">
+            <img src="showcase.jpg" alt="Student Showcase" width="1200" height="700">
+            <div class="carousel-caption">
+                <h3 style="font-size: 50px;"></h3>
+                <p style="font-size: 25px;"></p>
+            </div>      
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Bottom Content -->
+<div class="row info-section">
+    <div class="col-sm-4">
+        <a href="https://www.ub.edu.bz/" target="_blank">
+            <p class="text-center"><strong>UNIVERSITY OF BELIZE</strong></p><br>
+            <a href="#demo" data-toggle="collapse">
+                <img src="ublogo.png" class="img-rounded person" alt="University of Belize" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse">
+                <p style="font-size: 15px;">On August 1, 2000, the University of Belize (UB) was created from a merger of five institutions...</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="https://www.w3schools.com/html/" target="_blank">
+            <p class="text-center"><strong>HTML</strong></p><br>
+            <a href="#demo2" data-toggle="collapse">
+                <img src="HTML.jpeg" class="img-rounded person" alt="HTML" width="275" height="255">
+            </a>
+            <div id="demo2" class="collapse">
+                <p style="font-size: 15px;">HyperText Markup Language (HTML) is the basic scripting language used by web browsers...</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="https://doit.ub.edu.bz/" target="_blank">
+            <p class="text-center"><strong>DO-IT PLATFORM</strong></p><br>
+            <a href="#demo3" data-toggle="collapse">
+                <img src="doitlogo.png" class="img-rounded person" alt="DO-IT Platform" width="255" height="255">
+            </a>
+            <div id="demo3" class="collapse">
+                <p style="font-size: 15px;">The DO-IT platform supports students and professionals in the field of technology...</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+    <h3></h3>
+    <p>&copy; 2024 All Rights Reserved</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+</body>
+</html>

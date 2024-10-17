@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documentation - Fundamentals of Computing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        html, body {
+            height: 100%; /* Set the height to 100% */
+            margin: 0; /* Remove default margin */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('foc.jpeg'); /* Your background image path */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            color: white; /* Change text color to improve contrast */
+            background-color: #333; /* Fallback color */
+            display: flex;
+            flex-direction: column; /* Arrange children in a column */
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: purple;
+            border: 0;
+            font-size: 12px !important;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+        .navbar li a:hover, .navbar .navbar-brand:hover {
+            transform: translateY(-2px); /* Jump effect on hover */
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+        .container {
+            flex: 1; /* Allow the container to grow */
+            padding-top: 70px; /* Space for the navbar */
+        }
+        footer {
+            background-color: purple; /* Footer background color */
+            color: white; /* Default footer text color */
+            text-align: center;
+            padding: 30px;
+            font-size: 18px; /* Custom font size for footer text */
+        }
+        .info-section {
+            background-color: rgba(211, 211, 211, 0.8); /* Light gray with transparency */
+            color: darkblue;
+            font-family: Arial;
+            padding: 20px;
+            text-align: center; /* Center text for better alignment */
+            border-radius: 8px; /* Rounded corners */
+            margin: 20px 0; /* Margin for spacing */
+        }
+        .info-section img {
+            width: 100%; /* Make the image responsive */
+            max-width: 515px; /* Set a max width for the image */
+            height: auto; /* Maintain aspect ratio */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow for the image */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .info-section img:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="prac.html">FUNDAMENTALS OF COMPUTING</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="prac.html">HOME</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="project.html">PROJECT</a></li>
+                <li><a href="presentation.html">PRESENTATION</a></li>
+                <li><a href="database.html">DATABASE</a></li>
+                <li><a href="documentation.html">DOCUMENTATION</a></li>
+                <li><a href="dev_team.html">DEV TEAM</a></li>   
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container">
+    <h1>Database </h1>
+    <p></p>
+    <div class="info-section">
+        <article>
+            <a href="https://drive.google.com/file/d/1gL6zYcdEBFgzvh-4iPgwfkvESouDlsbX/view">
+                <img src="database.PNG" alt="Database Presentation">
+            </a>
+            <p>Click on the image above for presentation.</p>
+        </article>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
